@@ -30,8 +30,7 @@ I will try to stick to these styleguides where I can:
 
 ## PowerShell tool/controller example
 <details>
-<summary>
-[show details + repo link]
+<summary>📜[show details + repo link]
 
 - Language: PowerShell
 - Description: Uses the old Azure module to scrape from the Office 365 Graph.
@@ -79,7 +78,7 @@ With more time I would have liked to:
 
 ## Python REST server (bottle) example
 <details>
-<summary>🚧[show details]
+<summary>📜[show details + repo link]
 
 - Language: Python / BottlePy
 - Description: A quick REST listener I used for testing my APIs
@@ -99,9 +98,20 @@ The front-end was beyond the scope of this example hence choosing Bottle as the 
 </details>
 
 ### Link
-🚧 ETA: 12-SEP-2020
+https://github.com/Hicsy/DST-Rest-Prototype
+
 ### Goals
+
+- Playing with REST API's in Python.
+- Take some 'command' in JSON, queue it at the right REST endpoint, update its status once retrieved.
+- Quick testing with POSTMAN + StreamDeck buttons to quickly simulate/test inbound commands.
+- Just a prototype, so no Auth/Database/WebPage
+
 ### Outcomes
+
+- Practiced Google's Python stylesheet, and basic BottlePy (Bottle/Flask templates = beyond scope / not practiced).
+- Completed testing of my game mods using this tool.
+- Added a couple basic HTTP-GET endpoints for friends to test via web (non-RESTful).
 </details>
 
 ---
