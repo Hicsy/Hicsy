@@ -31,7 +31,7 @@ I will try to stick to these styleguides where I can:
 ## PowerShell tool/controller example
 <details>
 <summary>
-[show details]
+[show details + repo link]
 
 - Language: PowerShell
 - Description: Uses the old Azure module to scrape from the Office 365 Graph.
