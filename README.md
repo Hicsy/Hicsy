@@ -38,7 +38,7 @@ I will try to stick to these styleguides where I can:
 </summary>
 
 ### Link
-🚧 ETA: 10-SEP-2020
+https://github.com/Hicsy/AzureV1Report
 
 ### About
 <details>
@@ -50,13 +50,13 @@ The function was written as a work-around for a client with O365 which we didnt 
 This is a stripped out example of toolcode that was actually used in production quite frequently. It was hacky and quick, and only a [POC](https://en.wikipedia.org/wiki/Proof_of_concept) which unfortunately never got approved for development... so instead, I slapped some controlcode within; at-least my colleagues could also use what we had on-the-fly.
 Time savings from this script alone gained me about 5-10 hours per week, with ~5 other techs using it daily, we'd consistently save 20+ hours weekly using this simple script.
 
-If I had more time I would have liked to:
+With more time I would have liked to:
 
 - Add some nice dedicated controller scripts and keep the module pure.
 - Create module manifests and tests.
 - Update to support PowerShell core / v7.
 - Code in a fallback to the real productnames (for any license names I hadn't overridden).
-- Break those advanced-properties into a second step so the lookups (licences, memberships etc) don't holdup the core loop. *3x lookups on 200k users not using parralel pipelines becomes slooow...*
+- Break those advanced-properties into a second step so the lookups (licences, aliases etc) don't holdup the core loop. *3x lookups on 200k users not using parralel pipelines becomes slooow...*
 
 </details>
 
@@ -71,7 +71,8 @@ If I had more time I would have liked to:
 ### Outcomes
 - ➖ Concept **not** approved by management for further development.  
 - ➖ Use-case changed from a pure "tool" to a *controller* for junior staff.  
-- ➕ Widely adopted by my coworkers.  Saves 10-20hrs labor per week.  
+- ➕ Widely adopted by my coworkers.  Saves 10-20hrs labor per week.
+- ➖ Single-Use was scrapped as out-of-scope. Techs just manually lookup users in the CSV instead to save MFA+2FA hoop-jumping time.
 </details>
 
 ---
