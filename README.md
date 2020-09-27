@@ -1,7 +1,7 @@
 # About
 Hi there 👋
 
-My public repo's are mostly tutorials, the occasional hobby, and experiments for work tomorrow.  
+My public repos are mostly tutorials, the occasional hobby, and experiments for work tomorrow.  
 Below are examples of my coding-style in a couple languages.  
 They might just be a relevant snippet that has been stripped from my bitbucket and anonymised.
 <br>
