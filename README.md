@@ -3,26 +3,88 @@ Hi there 👋
 
 My public repo's are mostly tutorials, the occasional hobby, and experiments for work tomorrow.  
 Below are examples of my coding-style in a couple languages.  
-They are usually just a relevant snippet that has been stripped from my bitbucket and anonymised.
-
+They might just be a relevant snippet that has been stripped from my bitbucket and anonymised.
+<br>
+<br>
 
 ## Terms used
+<details>
+<summary>[Expand Section: Terminology definitions]
 
-- **Tool**/**toolscript**: Generally a module or "black-box" function which probably has some common parameters and will push one output. eg `get-smsReport`
+</summary>
+
 - **Controller**/**controlscript**: A separate function often used with pre-defined variables to operate one or more tools such as a batch-file or a GUI. eg `SendWeeklySmsEmail.bat managers.csv`
+- **PR**: A Pull-Request in Git.
+- **Tool**/**toolscript**: Generally a module or "black-box" function which probably has some common parameters and will push one output. eg `get-smsReport`
+</details>
+<br>
 
 ## Preferred Styleguides / Conventions:
+<details>
+<summary>[Expand Section: Links for StyleGuides used with each language]
+
+</summary>
+
 I will try to stick to these style-guides where I can:
 
-- PowerShell: https://poshcode.gitbooks.io/powershell-practice-and-style/content/Style-Guide/Function-Structure.html
-- JavaScript: https://google.github.io/styleguide/jsguide.html
-- Python: https://google.github.io/styleguide/pyguide.html
+- C++: https://google.github.io/styleguide/cppguide.html
 - C#/CSharp: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
+- JavaScript: https://google.github.io/styleguide/jsguide.html
+- PowerShell: https://poshcode.gitbooks.io/powershell-practice-and-style/content/Style-Guide/Function-Structure.html
+- Python: https://google.github.io/styleguide/pyguide.html
 - If a sentence ends with code: I put a space before the full-stop for clarity `/example` .
+</details>
+<br>
 
 ---
 
 # Examples
+
+## Contribution example: VS-Code Plugin 🧩
+<details>
+<summary>📜[show details + PR link]
+
+- Language: JSON / Regex
+- Description: Add `;region` code-folding support to .ahk files in VS-Code.
+</summary>
+
+### Link
+https://github.com/cweijan/vscode-autohotkey/pull/43
+
+### About
+<details>
+<summary>💬[Show/Hide overview]
+</summary>
+
+Visual Studio Code is a nifty all-in-one editor/debugger for AutoHotKey, but the language hasn't defined cold-folding regions like other languages such as C# (`#region`/`#endregion`), or JavaScript (`//#region`/`//#endregion`).
+
+I found a good active plugin with syntax-highlighting for AutoHotKey's `.ahk` files, and got to work with a proposal to implement folding:
+
+1. I double-checked [folding conventions](https://code.visualstudio.com/docs/editor/codebasics#_folding) for other languages.
+2. Learned how [VS-Code Language-Extenstension features](https://code.visualstudio.com/api/language-extensions/language-configuration-guide#folding) are defined with [examples](https://github.com/microsoft/vscode-extension-samples/tree/master/language-configuration-sample).
+3. Checked my usual [Regex resources](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference) and [examples](https://www.rexegg.com/regex-style.html) for guidance.
+3. Tested my concept locally in VS Code.
+4. Started [discussions](https://github.com/stef-levesque/vscode-autohotkey/issues/22) for the [Enhancement Request](https://github.com/cweijan/vscode-autohotkey/issues/44) in GitHub.
+5. Created a [Pull-Request](https://github.com/cweijan/vscode-autohotkey/pull/43) with my code using GitHub's new propose a change feature.
+
+</details>
+
+
+### Goals
+
+- Implement Code-Folding regions for .ahk scripts in VS-Code.
+- Support various whitespace arrangements.
+- Allow for H1/H2 rules on the same comment line for current AHK users.
+
+
+### Outcomes
+- ➕ PR was accepted and implemented.
+- ➕ Successfully added `.ahk` code-folding to my VS-Code by myself.
+- ➕ Got some great practice with the new way to do quick PR's in GitHub.
+- ➕ Learned a lot about .NET's RegEx and then created some awesome new [automated code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variable-transforms) using my new skills.
+</details>
+
+---
 
 ## PowerShell tool/controller example 🛠
 <details>
