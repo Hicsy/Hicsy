@@ -249,6 +249,47 @@ https://github.com/Hicsy/DST-MOD-REST-API
 </details>
 
 ---
+
+## AutoHotkey Script ⌨
+<details>
+<summary>📜[show details + Repo Link]
+
+- Language: AutoHotkey
+- Description: An example of an AutoHotKey to control a program as user.
+</summary>
+
+### About
+<details>
+<summary>💬[show/hide overview]
+</summary>
+
+My fascination for automation got me thinking about general workflow shortcuts and GUIs which we have less control over. I have seen AutoHotKey thrown around before and found a good opportunity to give it a whirl.
+
+If I didn't quite catch something while watching YouTube on another monitor, I can't just use my media buttons to jump back 10 seconds to repeat that last bit. Instead I break my focus, click on the YouTube screen (which also pauses it), tap `j` to scrub back, resume... and finally go back to what I was doing.<br>
+After looking into ways to send `FF`/`REW` from my StreamDeck or remapping my keyboard's media keys, I found issues with the way background apps (Spotify, MediaPlayer...) occasionally take focus of those commands over Chrome+YouTube.
+
+If I wanted to control YouTube directly, Chrome has to be launched in developer mode - which limits the possibility of ad-hoc use. Not-to-mention that I use multiple browsers at any one time.
+
+An easy solution right in front of me was to write an AutoHotKey which hooks on the media keys, and sends the commands directly to the last known YouTube window...
+</details>
+
+### Link
+https://github.com/Hicsy/AHK-YouTube
+
+### Goals
+
+- Learn AutoHotKey.
+- Control YouTube without losing application focus (and mental focus).
+- Aim for ad-hoc usage (rather than having to pre-empt opening a video in a particular app/player, etc)
+
+### Outcomes
+
+&emsp;➕ Using AutoHotKey 1 examples, I built this in AHK2, effectively learning both languages.<br>
+&emsp;➕ Successfully works across any browser and handles moving tabs to new windows etc.<br>
+&emsp;➕ I also got more comfortable with heavily-customising my Visual Studio Code.
+</details>
+
+---
 <!--
 ## Example Project
 <details open>
