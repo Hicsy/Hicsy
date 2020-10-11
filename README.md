@@ -27,7 +27,7 @@ They might just be a relevant snippet that has been stripped from my bitbucket a
 
 I will try to stick to these style-guides where I can:
 
-- C++: https://google.github.io/styleguide/cppguide.html
+- C++: https://docs.unrealengine.com/en-US/Programming/Development/CodingStandard/index.html
 - C#/CSharp: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions
 - JavaScript: https://google.github.io/styleguide/jsguide.html
 - PowerShell: https://poshcode.gitbooks.io/powershell-practice-and-style/content/Style-Guide/Function-Structure.html
